@@ -6,6 +6,7 @@ import { Button } from "@heroui/button";
 import { useState , useEffect} from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import {Navbar} from "@heroui/react";
+import Error from "./Pages/Error";
 
 
 const navLinks = [
@@ -130,6 +131,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </main>
     </div>
