@@ -46,7 +46,7 @@ export default function App() {
             <p className="font-bold text-primary-50 text-2xl">ACME</p>
        
           {/* Center: Nav Links (hidden on mobile) */}
-          <div className="hidden sm:flex gap-6">
+          <div className="hidden sm:flex gap-10">
             {navLinks.map((link) => (
               <RouterLink
                 key={link.name}
